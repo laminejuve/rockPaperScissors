@@ -42,18 +42,56 @@ function playRound(playerSelection, computerSelection) {
     }
     return result;
 }
-function game(){
-    for (let i = 0 ; i < 5; i++ ){
-      let choice = window.prompt("enter your choice for playin please!");
-      console.log(playRound(choice.toLowerCase() ,computerPlay()));
-      console.log("Computer : "+computer+"    player :"+player);
-    }
-    console.log("Final Result :");
+function game(btnName){
+    div1.textContent= playRound(btnName, computerPlay());
+    if (player < 5 && computer <5){
+        div2.textContent="Computer : "+computer+"    player :"+player;
+    }else if (computer < player){
+        div2.textContent="Congratulation!! you Win against the computer "
+        +player+"-"+computer+"  now you can start a new game";
+        player=0;
+        computer =0;
+        }else{
+        div2.textContent="You lose against the computer "
+        +player+"-"+computer+"   now you can start a new game";
+        player=0;
+        computer =0;
 
-    if (computer < player){
-        console.log("Congratulation!! you Win against the computer "+player+"-"+computer);
-    }else if (computer > player) {
-        console.log("You lose against the computer "+player+"-"+computer);
-    }
+          }
+    div1.style.border = 'solid 5px black';
+    div2.style.border = 'solid 5px black';
+
+
 }
-game();
+let btn1 = document.createElement("button");
+btn1.innerHTML = "Rock";
+btn1.name = "rock";
+btn1.onclick = function () {
+    game(btn1.name);
+  };
+document.body.appendChild(btn1);
+
+
+let btn2 = document.createElement("button");
+btn2.innerHTML = "Scissors";
+btn2.name = "scissors"
+btn2.onclick = function () {
+    game(btn2.name);
+  };
+document.body.appendChild(btn2);
+
+let btn3 = document.createElement("button");
+btn3.innerHTML = "Paper";
+btn3.name = "paper"
+btn3.onclick = function () {
+    game(btn3.name);
+  };
+document.body.appendChild(btn3);
+
+let div1 = document.createElement('div');
+document.body.appendChild(div1);
+let div2 = document.createElement('div');
+document.body.appendChild(div2);
+
+
+
