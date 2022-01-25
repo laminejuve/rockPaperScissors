@@ -32,7 +32,7 @@ If the player wins, they gain 1 point. If the computer wins, the player loses on
 
 ### Screenshot
 
-![](./images/screenShot.jpeg)
+![](./images/screenShot.jpg)
 
 
 ### Links
