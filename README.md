@@ -38,7 +38,7 @@ If the player wins, they gain 1 point. If the computer wins, the player loses on
 ### Links
 
 - Solution URL: [solution](https://github.com/laminejuve/rockPaperScissors)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live Demo](https://laminejuve.github.io/rockPaperScissors/)
 
 ### Built with
 
