@@ -157,7 +157,7 @@
 @media (max-width: 375px) {
     .container {
         width: 375px;
-        height: 1200px;
+        height: 1000px;
     }
     .main{
         height: 600px;
