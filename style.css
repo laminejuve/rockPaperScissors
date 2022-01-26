@@ -157,18 +157,25 @@
 @media (max-width: 375px) {
     .container {
         width: 375px;
-        height: 1000px;
+        height: 701px;
     }
     .main{
-        height: 600px;
+        height: 500px;
         width: 375px;
+    }
+    .main .container {
+        height: 250px;
+        width: 300px;
+
     }
     .scoreContainer{
         width: 350px;
     }
+
     .one{
-        width: 300px;
+        width: 330px;
     }
+  
     .main .container2 {
         height: 400px;
         width: 300px;
@@ -186,15 +193,15 @@
         margin-top: 40px;
     }
     .winner:nth-child(1),.winner:nth-child(3){
-        font-size: 15px;
-        width: 250px;
-    }
-    .play{
-        height: 150px;
+        font-size: 8px;
         width: 150px;
     }
+    .play{
+        height: 120px;
+        width: 120px;
+    }
     .playAgain{
-       width: 300px;
+       width: 240px;
        height: 60px;
        font-size: 30px;
        padding: 10px;
